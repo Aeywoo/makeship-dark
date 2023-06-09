@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Makeship Store, Support and Launch Dark Mode
 @namespace      github.com/aeywoo/makeship-dark
-@version        0.3.3
+@version        0.3.5
 @description    This stylesheet adds a dark mode to the Makeship Store and Makeship Launch websites.
 @author         Aeywoo
 ==/UserStyle== */
@@ -102,29 +102,46 @@
         background-color: var(--makeship-background-color);
     }
     /** ==Login/Signup Page== **/
+    /* Sign-in/Sign-up Box Background */
     .Auth__AuthWrapper-sc-12vt9pj-1 {
         background-color: var(--makeship-background-color-2);
     }
+    /* Sign-in/Sign-up Header, Text and List */
     .Auth__AuthWrapper-sc-12vt9pj-1 p,
     .Auth__AuthWrapper-sc-12vt9pj-1 h4,
     .Auth__AuthWrapper-sc-12vt9pj-1 ul {
         color: var(--makeship-text-color)
     }
+    /* Sign-in/Sign-up Eye Drop Icons */
+    /*
+     * TODO: Not This
+     * Replace with images rather than inverting with a filter.
+     */
     .password__IconWrapper-z1jgac-3 {
         filter: invert(1);
     }
+    /* Sign-in/Sign-up Input Box Placeholder Text */
+    .input__InputWrapper-pzkz74-1 input::placeholder,
+    .password__InputWrapper-z1jgac-1::after {
+        color: var(--makeship-text-color);
+        opacity: .6;
+    }
+    /* Sign-in/Sign-up Links */
     .Auth__AuthWrapper-sc-12vt9pj-1 a,
     .Auth__AuthWrapper-sc-12vt9pj-1 a:hover,
     .Auth__AuthWrapper-sc-12vt9pj-1 a:active,
     .Auth__AuthWrapper-sc-12vt9pj-1 a:visited {
         color: var(--makeship-header-color);
     }
+    /* "New to Makeship" Text */
     .Auth__AuthLinkContainer-sc-12vt9pj-8 p {
         color: var(--makeship-text-color);
     }
+    /* "New to Makeship" Background */
     .Auth__AuthLinkContainer-sc-12vt9pj-8 p span {
         background-color: var(--makeship-background-color);
     }
+    /* Create Account Button */
     .Auth__AuthLinkContainer-sc-12vt9pj-8 a {
         background-color: var(--makeship-background-color-3);
     }
@@ -186,6 +203,106 @@
     }
     .product__TrashButton-sc-1twnssm-8 {
         filter: invert(1);
+    }
+    
+    /** ==My Account Page== **/
+    .account__AccountHeader-sc-1fzwv86-1 p,
+    .account__AccountHeader-sc-1fzwv86-1 h5 {
+        color: var(--makeship-text-color);
+    }
+    .account__AccountCards-sc-1fzwv86-4 a div p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Order History== **/
+    .Container-sc-1yqjamz-0.orders__OrderHistoryWrapper-s1as64-0 p,
+    .Container-sc-1yqjamz-0.orders__OrderHistoryWrapper-s1as64-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Account Settings== **/
+    /* Username and Update Password Headers */
+    .Container-sc-1yqjamz-0.settings__SettingsWrapper-lewngz-0 h1,
+    .Container-sc-1yqjamz-0.settings__SettingsWrapper-lewngz-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    /* Account Info and Security Tabs */
+    .Tabs__TabItem-e3qh26-1 p.Typography__P2-sc-16m971g-12.Tabs__TabItemText-e3qh26-2.dofDan.eTpIeE {
+        color: var(--makeship-header-color);
+    }
+    .Tabs__TabItem-e3qh26-1 p.Typography__P2-sc-16m971g-12.Tabs__TabItemText-e3qh26-2.dofDan.bPXFnS {
+        color: var(--makeship-text-color);
+    }
+    /* My Info Label Text */
+    .input__LabelsWrapper-pzkz74-2 label {
+        color: var(--makeship-text-color);
+    }
+    /* Account Info Input Box Text */
+    .borderInput__Input-sc-182waua-0 {
+        color: var(--makeship-text-color);
+    }
+    /* "Subscribe to emails for special events" Text */
+    .signup__CheckboxWrapper-sc-1ktczro-3 p {
+        color: var(--makeship-text-color);
+    }
+    /* Password Input Box Label Text */
+    .password__InputContainer-z1jgac-0 label {
+        color: var(--makeship-text-color);
+    }
+    /* Password Input Box Text */
+    .PasswordValidation__RequirementWrapper-j0a57x-0 p {
+        color: var(--makeship-text-color);
+    }
+    /* Password Validation SVG */
+    .PasswordValidation__RequirementWrapper-j0a57x-0 svg.PasswordValidation__Checkmark-j0a57x-1.feFFOd path {
+        fill: var(--makeship-text-color);
+    }
+    /* Privacy Settings Text */
+    .Security__PrivacySection-sc-1tzro8a-5 p {
+        color: var(--makeship-text-color);
+    }
+    /* Privacy Settings Links */
+    .Security__PrivacySection-sc-1tzro8a-5 a,
+    .Security__PrivacySection-sc-1tzro8a-5 a:hover,
+    .Security__PrivacySection-sc-1tzro8a-5 a:active,
+    .Security__PrivacySection-sc-1tzro8a-5 a:visited {
+        color: var(--makeship-header-color);
+    }
+    
+    /** ==Badges Page== **/
+    .username__BadgeHeader-sc-1p1ejje-1 h1 {
+        color: var(--makeship-text-color);
+    }
+    .username__BadgesWrapper-sc-1p1ejje-3 a div p  {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Singular Badge Page== **/
+    .badgeId__BadgeCountdownTimerWrapper-sc-11tccmk-20 p,
+    .badgeId__BadgeCountdownTimerWrapper-sc-11tccmk-20 h5 {
+        color: var(--makeship-text-color) !important;
+    }
+    .badgeId__TitleWrapper-sc-11tccmk-2 h1 {
+        color: var(--makeship-text-color);
+    }
+    .badgeId__TitleWrapper-sc-11tccmk-2 a,
+    .badgeId__TitleWrapper-sc-11tccmk-2 a:hover,
+    .badgeId__TitleWrapper-sc-11tccmk-2 a:active,
+    .badgeId__TitleWrapper-sc-11tccmk-2 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 p,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 h5 {
+        color: var(--makeship-text-color);
+    }
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:hover,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:active,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .badgeId__Col-sc-11tccmk-5 p {
+        color: var(--makeship-text-color);
     }
     
     /** ==Main Page CSS== **/
@@ -297,96 +414,6 @@
         color: var(--makeship-header-color);
     }
     .id__GetStartedText-sc-1wvwzae-36 p {
-        color: var(--makeship-text-color);
-    }
-    
-    /** ==My Account Page== **/
-    .account__AccountHeader-sc-1fzwv86-1 p,
-    .account__AccountHeader-sc-1fzwv86-1 h5 {
-        color: var(--makeship-text-color);
-    }
-    .account__AccountCards-sc-1fzwv86-4 a div p {
-        color: var(--makeship-text-color);
-    }
-    
-    /** ==Order History== **/
-    .Container-sc-1yqjamz-0.orders__OrderHistoryWrapper-s1as64-0 p,
-    .Container-sc-1yqjamz-0.orders__OrderHistoryWrapper-s1as64-0 h5 {
-        color: var(--makeship-text-color);
-    }
-    
-    /** ==Account Settings== **/
-    .Container-sc-1yqjamz-0.settings__SettingsWrapper-lewngz-0 h1,
-    .Container-sc-1yqjamz-0.settings__SettingsWrapper-lewngz-0 h5 {
-        color: var(--makeship-text-color);
-    }
-    .Tabs__TabItem-e3qh26-1 p.Typography__P2-sc-16m971g-12.Tabs__TabItemText-e3qh26-2.dofDan.eTpIeE {
-        color: var(--makeship-header-color);
-    }
-    .Tabs__TabItem-e3qh26-1 p.Typography__P2-sc-16m971g-12.Tabs__TabItemText-e3qh26-2.dofDan.bPXFnS {
-        color: var(--makeship-text-color);
-    }
-    .input__LabelsWrapper-pzkz74-2 label {
-        color: var(--makeship-text-color);
-    }
-    .borderInput__Input-sc-182waua-0 {
-        color: var(--makeship-text-color);
-    }
-    .signup__CheckboxWrapper-sc-1ktczro-3 p {
-        color: var(--makeship-text-color);
-    }
-    .password__InputContainer-z1jgac-0 label {
-        color: var(--makeship-text-color);
-    }
-    .PasswordValidation__RequirementWrapper-j0a57x-0 p {
-        color: var(--makeship-text-color);
-    }
-    .PasswordValidation__RequirementWrapper-j0a57x-0 svg {
-        filter: invert(1);
-    }
-    .Security__PrivacySection-sc-1tzro8a-5 p {
-        color: var(--makeship-text-color);
-    }
-    .Security__PrivacySection-sc-1tzro8a-5 a,
-    .Security__PrivacySection-sc-1tzro8a-5 a:hover,
-    .Security__PrivacySection-sc-1tzro8a-5 a:active,
-    .Security__PrivacySection-sc-1tzro8a-5 a:visited {
-        color: var(--makeship-header-color);
-    }
-    
-    /** ==Badges Page== **/
-    .username__BadgeHeader-sc-1p1ejje-1 h1 {
-        color: var(--makeship-text-color);
-    }
-    .username__BadgesWrapper-sc-1p1ejje-3 a div p  {
-        color: var(--makeship-text-color);
-    }
-    
-    /** ==Singular Badge Page== **/
-    .badgeId__BadgeCountdownTimerWrapper-sc-11tccmk-20 p,
-    .badgeId__BadgeCountdownTimerWrapper-sc-11tccmk-20 h5 {
-        color: var(--makeship-text-color) !important;
-    }
-    .badgeId__TitleWrapper-sc-11tccmk-2 h1 {
-        color: var(--makeship-text-color);
-    }
-    .badgeId__TitleWrapper-sc-11tccmk-2 a,
-    .badgeId__TitleWrapper-sc-11tccmk-2 a:hover,
-    .badgeId__TitleWrapper-sc-11tccmk-2 a:active,
-    .badgeId__TitleWrapper-sc-11tccmk-2 a:visited {
-        color: var(--makeship-header-color);
-    }
-    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 p,
-    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 h5 {
-        color: var(--makeship-text-color);
-    }
-    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a,
-    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:hover,
-    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:active,
-    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:visited {
-        color: var(--makeship-header-color);
-    }
-    .badgeId__Col-sc-11tccmk-5 p {
         color: var(--makeship-text-color);
     }
     
