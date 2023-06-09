@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Makeship Store, Support and Launch Dark Mode
 @namespace      github.com/aeywoo/makeship-dark
-@version        0.3.6
+@version        0.3.7
 @description    This stylesheet adds a dark mode to the Makeship Store and Makeship Launch websites.
 @author         Aeywoo
 ==/UserStyle== */
@@ -425,6 +425,19 @@
         color: var(--makeship-header-color);
     }
     .id__GetStartedText-sc-1wvwzae-36 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Community Page== **/
+    .community__MakeshipTwitchContentWrapper-sc-7s6isl-5 p,
+    .community__MakeshipTwitchContentWrapper-sc-7s6isl-5 h2 {
+        color: var(--makeship-text-color);
+    }
+    .community__StayConnectedContentWrapper-sc-7s6isl-21 h2,
+    .community__StayConnectedContentWrapper-sc-7s6isl-21 p {
+        color: var(--makeship-text-color);
+    }
+    .community__SubscribeWrapper-sc-7s6isl-23 p {
         color: var(--makeship-text-color);
     }
     
