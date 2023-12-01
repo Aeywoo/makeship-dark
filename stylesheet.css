@@ -1,0 +1,783 @@
+/* ==UserStyle==
+@name           Makeship Store, Support and Launch Dark Mode
+@namespace      github.com/aeywoo/makeship-dark
+@version        0.3.8
+@description    This stylesheet adds a dark mode to the Makeship Store, Makeship Support and Makeship Launch websites.
+@author         Aeywoo
+==/UserStyle== */
+
+@-moz-document regexp("https?://[^/]+?\\.makeship\\.com/.*") {
+    /* ==General Colour Overrides and Background Colours== */
+    body {
+        /* Base Colours */
+        --makeship-text-color: rgb(229,229,229);
+        --makeship-header-color: rgb(102,142,255);
+        --makeship-button-color: rgb(83,73,237);
+        --makeship-background-color: rgb(20,20,20);
+        --makeship-background-color-2: rgb(42,42,42);
+        --makeship-background-color-3: rgb(50,50,50);
+        --makeship-background-color-4: rgb(65,65,65);
+        /* Logos */
+        --makeship-footer-logo: url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/footer-logo.svg");
+        /* Icons */
+        --makeship-icon-dropdown: url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/dropdown-icon.svg");
+        /* Social Icons */
+        --makeship-social-icon-tiktok:
+            url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/tiktok-icon.svg");
+        --makeship-social-icon-twitter:
+            url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/twitter-icon.svg");
+        --makeship-social-icon-facebook:
+            url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/facebook-icon.svg");
+        --makeship-social-icon-instagram:
+            url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/instagram-icon.svg");
+    }
+    ::marker {
+        color: var(--makeship-header-color);
+    }
+    
+    /* ==Makeship Launch Website== */
+    /** ==Sign-in Page== **/
+    #root {
+        background-color: var(--makeship-background-color-3);
+    }
+    .sc-jLiVlK.bVkyLZ,
+    .sc-jLiVlK.bVkyLZ p {
+        color: var(--makeship-text-color);
+    }
+    .gISUSr {
+        border-color: var(--makeship-text-color);
+    }
+    .sc-dwfUOf input {
+        color: var(--makeship-text-color);
+    }
+    .sc-bGqQkm.jqNiZh {
+        background-color: var(--makeship-background-color-2);
+    }
+    .sc-bGqQkm.jqNiZh img {
+        filter: invert(1);
+    }
+    .sc-bGqQkm.jqNiZh a,
+    .sc-bGqQkm.jqNiZh a:hover,
+    .sc-bGqQkm.jqNiZh a:active,
+    .sc-bGqQkm.jqNiZh a:visited {
+        color: var(--makeship-header-color);
+    }
+    .sc-ihnbgO.gbFNNh a,
+    .sc-ihnbgO.gbFNNh a p,
+    .sc-ihnbgO.gbFNNh a p:hover,
+    .sc-ihnbgO.gbFNNh a p:active,
+    .sc-ihnbgO.gbFNNh a p:visited {
+        color: var(--makeship-header-color);
+    }
+    /** Sign-up Page **/
+    .sc-cipWhh.dEEPDV a,
+    .sc-cipWhh.dEEPDV a:hover,
+    .sc-cipWhh.dEEPDV a:active,
+    .sc-cipWhh.dEEPDV a:visited {
+        color: var(--makeship-header-color);
+    }
+    /** Set Password Page **/
+    .sc-fkubWd.iXQHrd input,
+    .sc-fkubWd.iXQHrd input::placeholder {
+        color: var(--makeship-text-color);
+    }
+    .sc-fkubWd.iXQHrd div img {
+        filter: invert(1);
+    }
+    .sc-iuGMqu.kKOGoe a,
+    .sc-iuGMqu.kKOGoe a:hover,
+    .sc-iuGMqu.kKOGoe a:active,
+    .sc-iuGMqu.kKOGoe a:visited {
+        color: var(--makeship-header-color);
+    }
+    /** Verification Code Screen **/
+    .sc-fFYUoA.cBdIuT.react-code-input input {
+        color: var(--makeship-text-color) !important;
+    }
+    
+    /* =========================== */
+    
+    /* ==Makeship Store== */
+    body div._app__ContentWrapper-meusgd-2 {
+        background-color: var(--makeship-background-color);
+    }
+    /** ==Login/Signup Page== **/
+    /* Sign-in/Sign-up Box Background */
+    .Auth__AuthWrapper-sc-12vt9pj-1 {
+        background-color: var(--makeship-background-color-2);
+    }
+    /* Sign-in/Sign-up Header, Text and List */
+    .Auth__AuthWrapper-sc-12vt9pj-1 p,
+    .Auth__AuthWrapper-sc-12vt9pj-1 h4,
+    .Auth__AuthWrapper-sc-12vt9pj-1 ul {
+        color: var(--makeship-text-color)
+    }
+    /* Sign-in/Sign-up Eye Drop Icons */
+    /*
+     * TODO: Not This
+     * Replace with images rather than inverting with a filter.
+     */
+    .password__IconWrapper-z1jgac-3 {
+        filter: invert(1);
+    }
+    /* Sign-in/Sign-up Input Box Placeholder Text */
+    .input__InputWrapper-pzkz74-1 input::placeholder,
+    .password__InputWrapper-z1jgac-1::after {
+        color: var(--makeship-text-color);
+        opacity: .6;
+    }
+    /* Sign-in/Sign-up Links */
+    .Auth__AuthWrapper-sc-12vt9pj-1 a,
+    .Auth__AuthWrapper-sc-12vt9pj-1 a:hover,
+    .Auth__AuthWrapper-sc-12vt9pj-1 a:active,
+    .Auth__AuthWrapper-sc-12vt9pj-1 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* "New to Makeship" Text */
+    .Auth__AuthLinkContainer-sc-12vt9pj-8 p {
+        color: var(--makeship-text-color);
+    }
+    /* "New to Makeship" Background */
+    .Auth__AuthLinkContainer-sc-12vt9pj-8 p span {
+        background-color: var(--makeship-background-color);
+    }
+    /* Create Account Button */
+    .Auth__AuthLinkContainer-sc-12vt9pj-8 a {
+        background-color: var(--makeship-background-color-3);
+    }
+    .Auth__AuthLinkContainer-sc-12vt9pj-8 a:hover {
+        background-color: var(--makeship-background-color-2);
+    }
+    
+    /** ==Header Bar Search Form== **/
+    .Header__SearchBarWrapper-sc-1xie0ty-8 .Header__SearchResultsCard-sc-1xie0ty-9 {
+        background-color: var(--makeship-background-color-2);
+    }
+    .Header__SearchResultsCard-sc-1xie0ty-9 p {
+        color: var(--makeship-text-color);
+    }
+    .Header__SearchResultWrapper-sc-1xie0ty-10:hover {
+        background: var(--makeship-background-color-4);
+    }
+    
+    /** ==Cart Dropdown Modal CSS== **/
+    .CartDropdown__CartDropdownWrapper-sc-1dzdt22-0 {
+        background-color: var(--makeship-background-color-2);
+    }
+    .CartDropdown__CartDropdownHeader-sc-1dzdt22-1 p {
+        color: var(--makeship-text-color);
+    }
+    .CartDropdown__CartDropdownHeader-sc-1dzdt22-1 span {
+        filter: invert(1);
+    }
+    .Typography__H5-sc-16m971g-5.CartDropdown__EmptyCartText-sc-1dzdt22-5 {
+        color: var(--makeship-text-color);
+    }
+    .CartDropdown__ShopPageWrapper-sc-1dzdt22-7 a {
+        color: var(--makeship-header-color);
+    }
+    .CartDropdown__ShopPageWrapper-sc-1dzdt22-7 a:hover,
+    .CartDropdown__ShopPageWrapper-sc-1dzdt22-7 a:active,
+    .CartDropdown__ShopPageWrapper-sc-1dzdt22-7 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .CartDropdown__CartDropdownFooter-sc-1dzdt22-9 p {
+        color: var(--makeship-text-color);
+    }
+    .CartDropdown__CartButtonRow-sc-1dzdt22-10 a {
+        border-color: var(--makeship-header-color);
+        color: var(--makeship-text-color);
+    }
+    .CartDropdown__CartButtonRow-sc-1dzdt22-10 a:hover {
+        border-color: var(--makeship-header-color);
+        color: var(--makeship-text-color);
+    }
+    .CartDropdown__CartButtonRow-sc-1dzdt22-10 button {
+        background-color: var(--makeship-header-color);
+    }
+    .product__CartProductInfo-sc-1twnssm-2 p {
+        color: var(--makeship-text-color);
+    }
+    .product__CartProductRow-sc-1twnssm-3 a {
+        color: var(--makeship-text-color);
+    }
+    .product__TrashButton-sc-1twnssm-8 {
+        filter: invert(1);
+    }
+    
+    /** ==My Account Page== **/
+    .account__AccountHeader-sc-1fzwv86-1 p,
+    .account__AccountHeader-sc-1fzwv86-1 h5 {
+        color: var(--makeship-text-color);
+    }
+    .account__AccountCards-sc-1fzwv86-4 a div p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Order History== **/
+    .Container-sc-1yqjamz-0.orders__OrderHistoryWrapper-s1as64-0 p,
+    .Container-sc-1yqjamz-0.orders__OrderHistoryWrapper-s1as64-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Account Settings== **/
+    /* Username and Update Password Headers */
+    .Container-sc-1yqjamz-0.settings__SettingsWrapper-lewngz-0 h1,
+    .Container-sc-1yqjamz-0.settings__SettingsWrapper-lewngz-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    /* Account Info and Security Tabs */
+    .Tabs__TabItem-e3qh26-1 p.Typography__P2-sc-16m971g-12.Tabs__TabItemText-e3qh26-2.dofDan.eTpIeE {
+        color: var(--makeship-header-color);
+    }
+    .Tabs__TabItem-e3qh26-1 p.Typography__P2-sc-16m971g-12.Tabs__TabItemText-e3qh26-2.dofDan.bPXFnS {
+        color: var(--makeship-text-color);
+    }
+    /* My Info Label Text */
+    .input__LabelsWrapper-pzkz74-2 label {
+        color: var(--makeship-text-color);
+    }
+    /* Account Info Input Box Text */
+    .borderInput__Input-sc-182waua-0 {
+        color: var(--makeship-text-color);
+    }
+    /* "Subscribe to emails for special events" Text */
+    .signup__CheckboxWrapper-sc-1ktczro-3 p {
+        color: var(--makeship-text-color);
+    }
+    /* Password Input Box Label Text */
+    .password__InputContainer-z1jgac-0 label {
+        color: var(--makeship-text-color);
+    }
+    /* Password Input Box Text */
+    .PasswordValidation__RequirementWrapper-j0a57x-0 p {
+        color: var(--makeship-text-color);
+    }
+    /* Password Validation SVG */
+    .PasswordValidation__RequirementWrapper-j0a57x-0 svg.PasswordValidation__Checkmark-j0a57x-1.feFFOd path {
+        fill: var(--makeship-text-color);
+    }
+    /* Privacy Settings Text */
+    .Security__PrivacySection-sc-1tzro8a-5 p {
+        color: var(--makeship-text-color);
+    }
+    /* Privacy Settings Links */
+    .Security__PrivacySection-sc-1tzro8a-5 a,
+    .Security__PrivacySection-sc-1tzro8a-5 a:hover,
+    .Security__PrivacySection-sc-1tzro8a-5 a:active,
+    .Security__PrivacySection-sc-1tzro8a-5 a:visited {
+        color: var(--makeship-header-color);
+    }
+    
+    /** ==Badges Page== **/
+    .username__BadgeHeader-sc-1p1ejje-1 h1 {
+        color: var(--makeship-text-color);
+    }
+    .username__BadgesWrapper-sc-1p1ejje-3 a div p  {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Singular Badge Page== **/
+    .badgeId__BadgeCountdownTimerWrapper-sc-11tccmk-20 p,
+    .badgeId__BadgeCountdownTimerWrapper-sc-11tccmk-20 h5 {
+        color: var(--makeship-text-color) !important;
+    }
+    .badgeId__TitleWrapper-sc-11tccmk-2 h1 {
+        color: var(--makeship-text-color);
+    }
+    .badgeId__TitleWrapper-sc-11tccmk-2 a,
+    .badgeId__TitleWrapper-sc-11tccmk-2 a:hover,
+    .badgeId__TitleWrapper-sc-11tccmk-2 a:active,
+    .badgeId__TitleWrapper-sc-11tccmk-2 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 p,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 h5 {
+        color: var(--makeship-text-color);
+    }
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:hover,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:active,
+    .badgeId__BadgeInfoWrapper-sc-11tccmk-7 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .badgeId__Col-sc-11tccmk-5 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Main Page CSS== **/
+    a[data-testid="viewAll"] {
+        color: var(--makeship-text-color);
+    }
+    .button__Button-plsqok-1.quaternary__Quaternary-sc-1gj3rx-0 {
+        background-color: var(--makeship-button-color);
+        transition: background-color .3s ease;
+    }
+    .button__Button-plsqok-1.quaternary__Quaternary-sc-1gj3rx-0:hover {
+        background-color: rgba(83,73,237,.7);
+    }
+    .pages__AtMakeshipBody-sc-151v019-12 h2 {
+        color: var(--makeship-header-color);
+    }
+    .pages__AtMakeshipBody-sc-151v019-12 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Oops Page== **/
+    /* All the "Oops" Text */
+    .sc-404__Error404Body-sc-13b5pg2-1 p,
+    .sc-404__Error404Body-sc-13b5pg2-1 h1 {
+        color: var(--makeship-text-color);
+    }
+    /* "Try these liks" Text */
+    .sc-404__Error404Bottom-sc-13b5pg2-2 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Careers Page== **/
+    .careers__MastheadWrapper-sc-16iw1d-1 {
+        background-color: var(--makeship-background-color);
+    }
+    .careers__Masthead-sc-16iw1d-2 p {
+        color: var(--makeship-text-color);
+    }
+    .careers__Masthead-sc-16iw1d-2 h3 {
+        color: var(--makeship-header-color);
+    }
+    .careers__MastheadScroll-sc-16iw1d-5 img {
+        filter: invert(1);
+    }
+    .careers__MissionStatsContainer-sc-16iw1d-11 h5 {
+        color: var(--makeship-text-color);
+    }
+    .careers__MissionStatsContainer-sc-16iw1d-11 h2 {
+        color: var(--makeship-header-color);
+    }
+    .Container-sc-1yqjamz-0.careers__Section-sc-16iw1d-23.careers__ValuesSection-sc-16iw1d-27 {
+        background: linear-gradient(rgba(232, 224, 253, 0) 47.37%, rgb(45,35,182) 100%);
+    }
+    .careers__PerksWrapper-sc-16iw1d-31 h4 {
+        color: var(--makeship-header-color);
+    }
+    .careers__PerkWrapper-sc-16iw1d-33 p {
+        color: var(--makeship-text-color);
+    }
+    .careers__PerkWrapper-sc-16iw1d-33 p::before {
+        color: var(--makeship-header-color);
+    }
+    .Container-sc-1yqjamz-0.careers__Section-sc-16iw1d-23.careers__ValuesSection-sc-16iw1d-27 h5 {
+        color: var(--makeship-text-color);
+    }
+    .Container-sc-1yqjamz-0.careers__Section-sc-16iw1d-23.careers__RemoteFTSection-sc-16iw1d-24 h3 {
+        color: var(--makeship-header-color);
+    }
+    .Container-sc-1yqjamz-0.careers__Section-sc-16iw1d-23.careers__RemoteFTSection-sc-16iw1d-24 p {
+        color: var(--makeship-text-color);
+    }
+    .careers__Quote-sc-16iw1d-49 h1 {
+        color: var(--makeship-text-color);
+    }
+    .careers__Quote-sc-16iw1d-49 h5 {
+        color: var(--makeship-text-color);
+    }
+    .careers__Quote-sc-16iw1d-49 p {
+        color: var(--makeship-text-color);
+    }
+    .careers__Card-sc-16iw1d-41.careers__SocialCard-sc-16iw1d-57 .Social__SocialWrapper-mkc4b9-0 a {
+        filter: invert(1);
+    }
+    .JobBoard__JobTitleWrapper-sc-3h5tti-6 h3,
+    .JobBoard__JobList-sc-3h5tti-2 h5,
+    .JobBoard__JobDetails-sc-3h5tti-9 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Launch Campaign Page== **/
+    .id__LaunchCampaignWrapper-sc-1wvwzae-0 {
+        background-color: var(--makeship-background-color);
+    }
+    .Container-sc-1yqjamz-0.id__PastCampaignsSection-sc-1wvwzae-23 h2 {
+        color: var(--makeship-header-color);
+    }
+    .id__PastCampaignsContent-sc-1wvwzae-24 p {
+        color: var(--makeship-text-color);
+    }
+    .id__PastCampaignsContent-sc-1wvwzae-24 a,
+    .id__PastCampaignsContent-sc-1wvwzae-24 a:hover,
+    .id__PastCampaignsContent-sc-1wvwzae-24 a:active,
+    .id__PastCampaignsContent-sc-1wvwzae-24 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .id__SolutionText-sc-1wvwzae-10 h2 {
+        color: var(--makeship-header-color);
+    }
+    .id__SolutionText-sc-1wvwzae-10 p {
+        color: var(--makeship-text-color);
+    }
+    .Container-sc-1yqjamz-0.id__BenefitSection-sc-1wvwzae-29 h2 {
+        color: var(--makeship-header-color);
+    }
+    .id__Benefits-sc-1wvwzae-31 p,
+    .id__Benefits-sc-1wvwzae-31 h5 {
+        color: var(--makeship-text-color);
+    }
+    .id__GetStartedText-sc-1wvwzae-36 h4 {
+        color: var(--makeship-header-color);
+    }
+    .id__GetStartedText-sc-1wvwzae-36 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Community Page== **/
+    .community__MakeshipTwitchContentWrapper-sc-7s6isl-5 p,
+    .community__MakeshipTwitchContentWrapper-sc-7s6isl-5 h2 {
+        color: var(--makeship-text-color);
+    }
+    .community__StayConnectedContentWrapper-sc-7s6isl-21 h2,
+    .community__StayConnectedContentWrapper-sc-7s6isl-21 p {
+        color: var(--makeship-text-color);
+    }
+    .community__SubscribeWrapper-sc-7s6isl-23 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Shop Page CSS== **/
+    .Typography__H2-sc-16m971g-1.collection__ShopPageH2-sc-9gkzpw-2,
+    .Typography__P1-sc-16m971g-11.collection__ShopPageP1-sc-9gkzpw-3 {
+        color: var(--makeship-text-color);
+    }
+    .collection__HideFilters-sc-9gkzpw-5 p {
+        color: var(--makeship-text-color);
+    }
+    .Sidebar__SidebarSection-yxmh3f-1 p {
+        color: var(--makeship-text-color);
+    }
+    .collection__HideFilters-sc-9gkzpw-5 span img {
+        filter: invert(1);
+    }
+    
+    /** ==Campaign Supporters Modal (Support Board Modal)== **/
+    .ReactModal__Content.ReactModal__Content--after-open:has(.SupportBoardModal__ModalWrapper-sc-5hq0zk-1) {
+        background: var(--makeship-background-color) !important;
+        border: 1px solid var(--makeship-button-color) !important;
+    }
+    .SupportBoardModal__ModalHeader-sc-5hq0zk-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    .SupportBoardModal__ModalHeader-sc-5hq0zk-0 img {
+        filter: invert(1);
+    }
+    .SupportBoardModal__BadgesHeader-sc-5hq0zk-5 p:has(+ div p) {
+        color: var(--makeship-text-color);
+    }
+    .SupportBoardModal__BadgeImage-sc-5hq0zk-9 {
+        filter: invert(1);
+    }
+    .badge-row__BadgeRowWrapper-swau8b-0 p {
+        color: var(--makeship-text-color);
+    }
+    .SupportBoardModal__ModalFooter-sc-5hq0zk-11 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Your Cart Page== **/
+    .Container-sc-1yqjamz-0.cart__CartWrapper-sc-1szsfkh-0 h2 {
+        color: var(--makeship-text-color);
+    }
+    .cart__CartContents-sc-1szsfkh-4 p,
+    .cart__CartContents-sc-1szsfkh-4 h5 {
+        color: var(--makeship-text-color);
+    }
+    .cart__CartContents-sc-1szsfkh-4 a,
+    .cart__CartContents-sc-1szsfkh-4 a:hover,
+    .cart__CartContents-sc-1szsfkh-4 a:active,
+    .cart__CartContents-sc-1szsfkh-4 a:visited {
+        color: var(--makeship-header-color);
+    }
+    .cart__TrashButton-sc-1szsfkh-9 img {
+        filter: invert(1);
+    }
+    
+    /** ==Product "Owner/Creator" Page== **/
+    .Typography__Caption-sc-16m971g-13,
+    .Typography__H5-sc-16m971g-5.handle__SearchQuery-sc-1oq8jlt-0 {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Product Page CSS== **/
+    .handle__ProductCountdownTimerWrapper-sc-1y81hk8-5 p,
+    .handle__ProductCountdownTimerWrapper-sc-1y81hk8-5.PJVED h5 {
+        color: var(--makeship-text-color);
+    }
+    /* Product Type Header */
+    .ProductHeader__ProductRow-ns5qwv-0 a,
+    .ProductHeader__ProductRow-ns5qwv-0 a p,
+    .ProductHeader__ProductRow-ns5qwv-0 a:hover,
+    .ProductHeader__ProductRow-ns5qwv-0 a:active,
+    .ProductHeader__ProductRow-ns5qwv-0 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* From Price Text */
+    .ProductHeader__PriceRow-ns5qwv-1.delYWj p {
+        color: var(--makeship-text-color);
+    }
+    /* Product Name Text */
+    .Typography__H5-sc-16m971g-5.ProductInfostyled__ProductTitle-sc-1xewy4m-3 {
+        color: var(--makeship-text-color);
+    }
+    /* By Studio/Developer/Person Text */
+    .ProductInfostyled__ProductDetails-sc-1xewy4m-2 a,
+    .ProductInfostyled__ProductDetails-sc-1xewy4m-2 a:focus ,
+    .ProductInfostyled__ProductDetails-sc-1xewy4m-2 a:hover ,
+    .ProductInfostyled__ProductDetails-sc-1xewy4m-2 a:active {
+        color: var(--makeship-header-color);
+    }
+    /* Product Sales Count Text and Funded Percentage Text */
+    .ProductInfostyled__ProgressRow-sc-1xewy4m-8 p {
+        color: var(--makeship-text-color);
+    }
+    /* Digital Production Design Sales Text */
+    .ProductInfostyled__VariantIntroWrapper-sc-1xewy4m-10 p {
+        color: var(--makeship-text-color);
+    }
+    /* Only Plush/Plush Production Design Selection Boxes Text */
+    .ProductInfostyled__VariantContentRow-sc-1xewy4m-26 p {
+        color: var(--makeship-text-color);
+    }
+    /* Shipping Icon */
+    .ProductInfostyled__ShipDateWrapper-sc-1xewy4m-15 img {
+        filter: invert(1);
+    }
+    /* Shipping Estimated Timeline text */
+    .ProductInfostyled__ShipDateWrapper-sc-1xewy4m-15 p {
+        color: var(--makeship-text-color);
+    }
+    .ProductInfostyled__ShipDateContainer-sc-1xewy4m-13 a,
+    .ProductInfostyled__ShipDateContainer-sc-1xewy4m-13 a:hover,
+    .ProductInfostyled__ShipDateContainer-sc-1xewy4m-13 a:active,
+    .ProductInfostyled__ShipDateContainer-sc-1xewy4m-13 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* Recent Supporters text links */
+    .SupportBoard__SupportBoardWrapper-sc-1772jn7-0 a,
+    .SupportBoard__SupportBoardWrapper-sc-1772jn7-0 a:hover,
+    .SupportBoard__SupportBoardWrapper-sc-1772jn7-0 a:active,
+    .SupportBoard__SupportBoardWrapper-sc-1772jn7-0 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* Learn More About Shipping Timelines Text */
+    .ProductInfostyled__ShipDateContainer-sc-1xewy4m-13 a {
+        color: var(--makeship-header-color);
+    }
+    /* Recent Supporters Text */
+    .SupportBoard__SupportBoardWrapper-sc-1772jn7-0 p:not(.SupportBoard__Footer-sc-1772jn7-2.gaOKjO p) {
+        color: var(--makeship-text-color);
+    }
+    /* View All Supporters Text */
+    .Typography__S2-sc-16m971g-9.SupportBoard__ViewAllText-sc-1772jn7-4 {
+        color: var(--makeship-header-color);
+    }
+    /* Message from the Creator text and links */
+    /** Text **/
+    .ProductInfostyled__CreatorMessageWrapper-sc-1xewy4m-21 p {
+        color: var(--makeship-text-color);
+    }
+    /** Link **/
+    .ProductInfostyled__CreatorMessageWrapper-sc-1xewy4m-21 a,
+    .ProductInfostyled__CreatorMessageWrapper-sc-1xewy4m-21 a:hover,
+    .ProductInfostyled__CreatorMessageWrapper-sc-1xewy4m-21 a:active,
+    .ProductInfostyled__CreatorMessageWrapper-sc-1xewy4m-21 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* Email Subscribe text and links */
+    /** Text **/
+    .ProductInfostyled__SubscribeWrapper-sc-1xewy4m-52 p {
+        color: var(--makeship-text-color);
+    }
+    /** Links **/
+    .ProductInfostyled__SubscribeWrapper-sc-1xewy4m-52 p a,
+    .ProductInfostyled__SubscribeWrapper-sc-1xewy4m-52 p a:hover,
+    .ProductInfostyled__SubscribeWrapper-sc-1xewy4m-52 p a:active,
+    .ProductInfostyled__SubscribeWrapper-sc-1xewy4m-52 p a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* Campaign process text, links and image */
+    /** Image **/
+    .ProductInfostyled__LogoWrapper-sc-1xewy4m-30.ProductInfostyled__InfographicLogoWrapper-sc-1xewy4m-36 span img {
+        filter: invert(1);
+    }
+    /** Text **/
+    .ProductInfostyled__CampaignProcessContainer-sc-1xewy4m-33 p {
+        color: var(--makeship-text-color);
+    }
+    .ProductInfostyled__ProductInfographicItem-sc-1xewy4m-38 .Typography__Overline-sc-16m971g-14 {
+        color: var(--makeship-text-color);
+    }
+    /** Links **/
+    .ProductInfostyled__CampaignProcessContainer-sc-1xewy4m-33 a,
+    .ProductInfostyled__CampaignProcessContainer-sc-1xewy4m-33 a:hover,
+    .ProductInfostyled__CampaignProcessContainer-sc-1xewy4m-33 a:active,
+    .ProductInfostyled__CampaignProcessContainer-sc-1xewy4m-33 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* Accordion Wrappers text, links, styles and svgs */
+    /** Text **/
+    .Accordion__AccordionWrapper-osg7d7-0,
+    .Accordion__AccordionWrapper-osg7d7-0 p,
+    .Accordion__AccordionWrapper-osg7d7-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    .Typography__P1-sc-16m971g-11.ProductInfostyled__SocialHeader-sc-1xewy4m-40 {
+        color: var(--makeship-text-color);
+    }
+    /** Links **/
+    .Accordion__AccordionWrapper-osg7d7-0 p a,
+    .Accordion__AccordionWrapper-osg7d7-0 p a:hover,
+    .Accordion__AccordionWrapper-osg7d7-0 p a:active,
+    .Accordion__AccordionWrapper-osg7d7-0 p a:visited {
+        color: var(--makeship-header-color);
+    }
+    /** Styles **/
+    .Accordion__AccordionSection-osg7d7-1 {
+        border-bottom: 1px solid var(--makeship-text-color);
+    }
+    /** SVGs **/
+    /*** Accordion Dropdown Icon ***/
+    .ProductInfostyled__ProductInfo-sc-1xewy4m-0 .Accordion__AccordionArrow-osg7d7-3 {
+        content: var(--makeship-icon-dropdown);
+    }
+    /*** Twitter ***/
+    .ProductInfostyled__ProductInfo-sc-1xewy4m-0 .Social__SocialWrapper-mkc4b9-0 a:nth-of-type(1) {
+        content: var(--makeship-social-icon-twitter);
+    }
+    /*** Facebook ***/
+    .ProductInfostyled__ProductInfo-sc-1xewy4m-0 .Social__SocialWrapper-mkc4b9-0 a:nth-of-type(2) {
+        content: var(--makeship-social-icon-facebook);
+    }
+    /* Recommended For You Section */
+    /** Text **/
+    .Carousel__Container-c4cp6h-0 h2 {
+        color: var(--makeship-text-color);
+    }
+    /** Modules **/
+    .ProductCard__Container-czk5kj-2 p {
+        color: var(--makeship-text-color);
+    }
+    /** Flickity Page Dots **/
+    .flickity-page-dots li {
+        background: #FFF !important;
+    }
+    
+    /** ==Not Funded Product Page== **/
+    .ProductInfostyled__ProgressBarWrapper-sc-1xewy4m-6 p {
+        color: var(--makeship-text-color);
+    }
+    .ProductInfostyled__RefundGuaranteedWrapper-sc-1xewy4m-18 p {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Sign up for email modal== **/
+    .ReactModal__Content.ReactModal__Content--after-open:has(.SubscribeModal__ModalContent-ioos29-0) {
+        background: var(--makeship-background-color) !important;
+        border: 1px solid var(--makeship-button-color) !important;
+    }
+    .SubscribeModal__CancelIcon-ioos29-1 {
+        filter: invert(1);
+    }
+    .SubscribeModal__ModalContent-ioos29-0 p,
+    .SubscribeModal__ModalContent-ioos29-0 h5 {
+        color: var(--makeship-text-color);
+    }
+    .SubscribeModal__ModalContent-ioos29-0 a,
+    .SubscribeModal__ModalContent-ioos29-0 a:hover,
+    .SubscribeModal__ModalContent-ioos29-0 a:active,
+    .SubscribeModal__ModalContent-ioos29-0 a:visited,
+    .Typography__Caption-sc-16m971g-13.SubscribeModal__ModalCaption-ioos29-4 span {
+        color: var(--makeship-header-color);
+    }
+    
+    /** ==Shipping Destinations== **/
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 p,
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 h1,
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 ul {
+        color: var(--makeship-text-color);
+    }
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 a,
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 a:hover,
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 a:active,
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 a:visited,
+    .Container-sc-1yqjamz-0.ShippingDestinations__ShippingDestinationsContainer-sc-1e4nye-0 li::before {
+        color: var(--makeship-header-color);
+    }
+    
+    /** ==Legal Pages - Privacy Policy/Terms of Service/Shipping Policy/Refund Policy== **/
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 b,
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 p,
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 ul {
+        color: var(--makeship-text-color);
+    }
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 a,
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 a:hover,
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 a:active,
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 a:visited {
+        color: var(--makeship-header-color);
+    }
+    /* Refund Policy */
+    .Container-sc-1yqjamz-0.handle__PolicyWrapper-sc-1mjwonv-0 {
+        color: var(--makeship-text-color);
+    }
+    
+    /** ==Cookies Policy== **/
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 p,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 h1,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 h4,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 h5,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 h6,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 ul {
+        color: var(--makeship-text-color);
+    }
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 a,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 a:hover,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 a:active,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 a:visited,
+    .Container-sc-1yqjamz-0.cookies-policy__CookiesPolicyContainer-m0rdon-0 li::before {
+        color: var(--makeship-header-color);
+    }
+    
+    /** ==Site Footer== **/
+    ._app__FooterWrapper-meusgd-3 {
+        background-color: var(--makeship-background-color);
+    }
+    .Footer__FooterContainer-sc-1euten4-0 {
+        background: var(--makeship-background-color-3);
+    }
+    /** Footer Logo **/
+    .Footer__FooterRow-sc-1euten4-2 > span img {
+        content: var(--makeship-footer-logo);
+    }
+    /** Social Icons **/
+    .Social__SocialWrapper-mkc4b9-0 a:nth-of-type(1) {
+        content: var(--makeship-social-icon-twitter);
+        width: 30px;
+    }
+    .Social__SocialWrapper-mkc4b9-0 a:nth-of-type(2) {
+        content: var(--makeship-social-icon-facebook);
+        width: 30px;
+    }
+    .Social__SocialWrapper-mkc4b9-0 a:nth-of-type(3) {
+        content: var(--makeship-social-icon-instagram);
+        width: 30px;
+    }
+    .Social__SocialWrapper-mkc4b9-0 a:nth-of-type(4) {
+        content: var(--makeship-social-icon-tiktok);
+        width: 30px;
+    }
+    .Footer__FooterList-sc-1euten4-5 a,
+    .Footer__FooterList-sc-1euten4-5 p {
+        color: var(--makeship-text-color) !important;
+    }
+    .Footer__FooterRow-sc-1euten4-2 a,
+    .Footer__FooterRow-sc-1euten4-2 p {
+        color: var(--makeship-text-color) !important;
+    }
+}
