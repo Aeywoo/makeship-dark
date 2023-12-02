@@ -728,6 +728,67 @@
 		background: #FFF !important;
 	}
 	
+	/** ==Campaign Product Page== **/
+	div[class^="handle__PetitionCountdownTimerWrapper-sc-"] p[class^="Typography__S2-sc-"],
+	div[class^="handle__PetitionCountdownTimerWrapper-sc-"] h5[class^="Typography__H5-sc-"] {
+		color: var(--makeship-text-color);
+	}
+	/* Changing the "Let's make the *Product* happen" header text colour
+	 * And the "By" creator/user tag. */
+	div[class^="PetitionInfostyled__PetitionDetails-sc-"] :is(h5,p) {
+		color: var(--makeship-text-color);
+	}
+	/* Changing the "Product Launched on" date text colour */
+	div[class^="PetitionInfostyled__PetitionLaunchInfoWrapper-sc-"] p {
+		color: var(--makeship-text-color);
+	}
+	/* Changing the text colour */
+	div[class^="PetitionInfostyled__ProgressBarWrapper-sc-"] div[class^="PetitionInfostyled__ProgressRow-sc-"] p {
+		color: var(--makeship-text-color);
+	}
+	/* Change the "Pledge to show the creator" text colour */
+	p[class^="Typography__P1-sc-"][class*="PetitionInfostyled__PetitionCaption-sc-"] {
+		color: var(--makeship-text-color);
+	}
+	/* Changing the "Why?" and "Story" tab title text colours and botder-bottom colours */
+	div[class^="PetitionInfostyled__CreatorPitchToggle-sc-"] p[class*="fbavko"] {
+		color: var(--makeship-header-color);
+		border-bottom: 2px solid var(--makeship-header-color);
+	}
+	div[class^="PetitionInfostyled__CreatorPitchToggle-sc-"] p[class*="kXTSxL"] {
+		color: var(--makeship-text-color);
+		border-bottom: 2px solid var(--makeship-text-color);
+	}
+	/* Change the "Why?" and "Story" paragraph text colours */
+	div[class^="PetitionInfostyled__ProductDescription-sc-"] p,
+	div[class^="PetitionInfostyled__ProductDescription-sc-"] p[class^="Typography__Overline-sc-"] {
+		color: var(--makeship-text-color);
+	}
+	/* Inverts the Infographic Icon because they didn't make it transparent */
+	div[class^="PetitionInfostyled__LogoWrapper-sc-"] span img[alt="Infographic Icon"] {
+		filter: invert(1);
+	}
+	
+	/* Changes the dropdown-icon svg file to the white version */
+	div[class^="Accordion__AccordionHead-"] span img[class*="egpICM"] {
+		content: url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/dropdown-icon.svg");
+	}
+	div[class^="Accordion__AccordionHead-"] span img[class*="dJeCla"] {
+		content: url("https://raw.githubusercontent.com/Aeywoo/makeship-dark/main/img/dropdown-icon.svg");
+	}
+	/* Changes the "Enter your email to receive updates" text colour */
+	div[class^="PetitionInfostyled__SubscribeWrapper-sc-"] p {
+		color: var(--makeship-text-color);
+	}
+	/* Changes the "Share this Petition" text colour */
+	p[class^="Typography__P1-sc-"][class*="PetitionInfostyled__SocialHeader-sc-"] {
+		color: var(--makeship-text-color);
+	}
+	/* Changes the "Reference images provided by creator" subtext colour */
+	div[class^="ImageGallery__MainImageWrapper-sc-"] div p {
+		color: var(--makeship-text-color);
+	}
+	
 	/** ==Not Funded Product Page== **/
 	div[class^="ProductInfostyled__ProgressBarWrapper-sc-"] p {
 		color: var(--makeship-text-color);
